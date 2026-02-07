@@ -10,8 +10,13 @@ while True:
     print("4. Dividir")
     print("5. Potencia")
     print("6. Raíz cuadrada")
+    print("7. salir")
 
     opcion = input("Ingresa el número de la opción: ")
+
+    if opcion == "7":
+        print("¡Hasta luego! 👋")
+        break
 
     if opcion not in ["1", "2", "3", "4", "5", "6"]:
         print("Error: opción no válida")
