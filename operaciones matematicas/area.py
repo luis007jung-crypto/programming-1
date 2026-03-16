@@ -1,0 +1,8 @@
+import math
+
+def area_circulo(radio):
+    return math.pi * radio ** 2
+
+print(area_circulo(1))
+print(area_circulo(3))
+print(area_circulo(5))
