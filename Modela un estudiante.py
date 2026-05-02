@@ -1,5 +1,5 @@
 class Estudiante:
-    def _init_(self, nombre, carnet, carrera):
+    def __init__(self, nombre, carnet, carrera):
         self.nombre = nombre
         self.carnet = carnet
         self.carrera = carrera
@@ -15,10 +15,11 @@ class Estudiante:
         return self.promedio() >= 61
 
 
-# Uso rápido
+# Crear objeto
 e = Estudiante("Luis", "123", "Ingeniería")
+
 e.agregar_nota(70)
 e.agregar_nota(80)
 
-print("Promedio:", e.promedio())
-print("¿Aprobado?:", e.aprobado())
+print(e.promedio())   # 75.0
+print(e.aprobado())   # True
